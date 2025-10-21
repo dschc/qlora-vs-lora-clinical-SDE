@@ -24,25 +24,25 @@ pip install -r requirments.txt
 
 ## Dataset 
 
-### Downlaod 
-Download the datseet from [Zenodo](https://zenodo.org/records/14793810) and saved it in '/data' director 
+1. Download the datseet from [Zenodo](https://zenodo.org/records/14793810) and saved it in '/data' director 
 
-### Training dataset
-prepare the training dataset
- ```bash 
- python scripts/preepare_train_chat_data.py 
- ```
 
- ### Advanced Prompt with ICL 
- 1. Run the ICL server 
- ```bash 
- python icl_retriever_app.py
- ``` 
+2. prepare the training dataset
+      ```bash 
+      python scripts/preepare_train_chat_data.py 
+      ```
 
- 2. Create the advanced prompt with ICL 
- ```bash 
- python create_advance_prompt.py
- ```
+3. Advanced Prompt with ICL 
+
+      a. Run the ICL server 
+      ```bash 
+      python icl_retriever_app.py
+      ``` 
+
+      b. Create the advanced prompt with ICL 
+      ```bash 
+      python create_advance_prompt.py
+      ```
 
 ## Model Preparation 
 1. Fine tune 
@@ -64,11 +64,12 @@ python FineTune/fineTune.py --experiment '4bit' \
 2. Merge Model 
 
 for Qlora model
+
 ```bash 
 python script/merge_model_qlora.py \
-        --base_model meta-llama/Meta-Llama-3.1-8B-Instruct \
-        --adapter_path .FineTune/checkpoints/4bit/
-        --output_path .FineTune/Merged/4bit/ 
+      --base_model meta-llama/Meta-Llama-3.1-8B-Instruct \
+      --adapter_path .FineTune/checkpoints/4bit/
+      --output_path .FineTune/Merged/4bit/ 
 ```
 
 for Lora Model 

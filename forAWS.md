@@ -1,6 +1,5 @@
 # basic setups 
-
-Most of the libraries requires python 3.10 
+if here is issues with the libraries and dependencies, we suggest to use python3.10
 
 Used pyenv to install python3.10 without sudo access
 
