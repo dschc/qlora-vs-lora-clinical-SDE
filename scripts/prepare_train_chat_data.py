@@ -4,7 +4,6 @@ from tqdm import tqdm
 random.seed(1234)
 
 LANG = ['en']
-#LANG = ['en', 'de']  
 SYSTEM_PROMPT = open("./prompts/naive.txt", "r").read()
 DATA_PATH = "./data"
 
