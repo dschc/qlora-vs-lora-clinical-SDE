@@ -101,6 +101,7 @@ python cached_advance_prompt_batched.py \
       --prompt_file "./prompts/prompt_test_advanced_icl.json" \
       --batch_size 16 \
       --max_concurrent 8 
+```
 
 4. evaluation 
 ```bash 
