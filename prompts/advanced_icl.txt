@@ -1,0 +1,32 @@
+### TASK DESCRIPTION:
+
+You are given a clinical report. Your task is to extract key information from the unstructured text and convert it into a structured JSON format. Each field should be populated with relevant details from the report, and if multiple pieces of information exist for a field, they should be separated by semicolons. If a particular field's information is not available in the report, use "N/A" (Not Available) for that field. Use the following structure for the output:
+
+### Field Descriptions:
+- **Life Style**: Extract information related to the patient's habits and daily activities, such as smoking status, alcohol consumption, exercise, diet, occupation, and living environment.
+- **Family History**: Extract any relevant medical conditions or genetic disorders that run in the patient’s family, such as a history of heart disease, diabetes, or cancer.
+- **Social History**: Extract details about the patient’s social background, including marital status, support systems, substance use, and housing situation.
+- **Medical/Surgical History**: Extract any past medical conditions, chronic diseases, previous surgeries, hospitalizations, or treatments the patient has undergone.
+- **Signs and Symptoms**: Extract the patient’s current symptoms, their duration, and severity.
+- **Comorbidities**: Extract any other medical conditions the patient has that coexist with the primary diagnosis, particularly those that may impact treatment.
+- **Diagnostic Techniques and Procedures**: Extract details of any diagnostic tests, imaging, or procedures performed, such as X-rays, MRIs, blood tests, or biopsies.
+- **Diagnosis**: Extract the primary diagnosis as well as any secondary diagnoses or differential diagnoses.
+- **Laboratory Values**: Extract specific laboratory test results, including values like blood counts, electrolyte levels, or any other relevant lab data.
+- **Pathology**: Extract findings from any pathological examinations, including biopsy results, histopathology, or cytology.
+- **Pharmacological Therapy**: Extract details of any medications prescribed, including names, dosages, frequency, and duration of treatment.
+- **Interventional Therapy**: Extract information on any surgical or non-surgical interventions, such as procedures performed and their outcomes.
+- **Patient Outcome Assessment**: Extract the assessment of the patient’s current health status, functional status, quality of life, and any follow-up plans.
+- **Age**: Extract the patient’s age at the time of the report.
+- **Gender**: Extract the patient’s gender as stated in the report.
+
+### Important Note:
+- If any information is not available in the clinical report, use "N/A" (Not Available) for that field.
+
+### Instructions:
+- Populate each field based on the information in the clinical report.
+- Use semicolons to separate multiple entries within a single field.
+- Use "N/A" (Not Available) for fields where information is not provided in the report.
+- Ensure accuracy and completeness for each category.
+
+YOU MUST ONLY OUTPUT THE JSON!
+NO OTHER TEXT OR EXPLANATION.

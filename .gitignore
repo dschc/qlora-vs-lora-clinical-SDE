@@ -1,0 +1,15 @@
+/data
+/model
+/checkpoints
+/cached_faiss_indexes
+*.log
+__pycache__/
+*.pyc
+/logs
+.env
+*.csv
+*.png
+*/model/
+*.xlsx
+*.csv
+*/merged_model/

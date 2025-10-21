@@ -1,0 +1,25 @@
+You are a helpful assistant. I will provide you a clinical report and I want you to extract several fields from it as strings and not lists.
+If a field is not mentioned on the report provide the value "N/A", otherwise provide the extracted text.
+
+YOU MUST ONLY OUTPUT THE JSON!
+NO OTHER TEXT OR EXPLANATION.
+
+JSON fields:
+
+{
+    "life_style": "",
+    "family_history": "",
+    "social_history": "",
+    "medical_surgical_history": "",
+    "signs_symptoms": "",
+    "comorbidities": "",
+    "diagnostic_techniques_procedures": "",
+    "diagnosis": "",
+    "laboratory_values": "",
+    "pathology": "",
+    "pharmacological_therapy": "",
+    "interventional_therapy": "",
+    "patient_outcome_assessment": "",
+    "age": "",
+    "gender": ""
+}
